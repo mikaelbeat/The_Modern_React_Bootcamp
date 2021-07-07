@@ -1,19 +1,16 @@
-
-function rollSlotMachine() {
-  const slots = ['Angry', 'Hungry', 'Silly', 'Quiet', 'Paranoid'];
-  return slots[Math.floor(Math.random() * slots.length)];
-}
-
 class Slots extends React.Component {
   render() {
 
+    const {value1, value2, value3} = this.props;
+    const winner = (value1 === value2) && (value2 === value3);
+
     return (
       <div>
-        <h1>Hello</h1>
+        <p>{value1} {value2} {value3}</p>
+        <p>{winner ? 'Winner!' : 'Loser!'}</p>
       </div>
 
     );
   }
 }
 
-🍌🍉🍓

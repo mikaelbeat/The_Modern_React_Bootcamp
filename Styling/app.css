@@ -1,0 +1,15 @@
+
+.Slots {
+    border: 2px solid black;
+    background: lightblue;
+}
+
+.Slots-winner {
+    color: yellow;
+    background: red;
+}
+
+.Slots-loser {
+    color: red;
+    background: yellow;
+}
